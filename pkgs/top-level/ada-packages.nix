@@ -44,6 +44,7 @@ makeScopeWithSplicing' {
     gnatinspect = self.callPackage ../development/ada-modules/gnatcoll/db.nix { component = "gnatinspect"; };
 
     adasat = self.callPackage ../development/ada-modules/adaSat { };
+    vss = self.callPackage ../development/ada-modules/vss { };
   });
 }
 
