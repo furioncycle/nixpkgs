@@ -3,7 +3,6 @@
 , fetchFromGitHub
 , gprbuild
 , gnat
-, gpr2
 , gnatcoll-core
 , vss
 }:
@@ -29,12 +28,8 @@ stdenv.mkDerivation rec {
   nativeBuildInputs = [
     gnat
     gprbuild
-    gpr2
-  ];
-
-  buildInputs = [
-    gprbuild
     gnatcoll-core
     vss
   ];
+
 }

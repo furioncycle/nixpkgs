@@ -46,6 +46,7 @@ makeScopeWithSplicing' {
     adasat = self.callPackage ../development/ada-modules/adaSat { };
     vss = self.callPackage ../development/ada-modules/vss { };
     prettier = self.callPackage ../development/ada-modules/prettier-ada { };
+    langkit = self.callPackage ../development/ada-modules/langkit { };
   });
 }
 
