@@ -14,11 +14,15 @@ stdenv.mkDerivation rec {
     owner = "AdaCore";
     repo = "VSS";
     rev = "v${version}";
-    sha256 = "sha256-XD5orxMGXFBVvc9UjSLXGb0yP5tDGNubykQ1b0B9o/k=";
+    sha256 = "XD5orxMGXFBVvc9UjSLXGb0yP5tDGNubykQ1b0B9o/k=";
   };
 
   nativeBuildInputs = [
     gnat
+    gprbuild
+  ];
+
+  propagatedBuildInputs = [
     gprbuild
   ];
 
